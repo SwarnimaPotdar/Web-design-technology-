@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for the upcoming exam using our accessible form.">
+    <title>Exam Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f0;
+    color: #333;
+}
+
+header {
+    background-color: #005b99;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 2em;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #005b99;
+    color: white;
+    border: none;
+    padding: 0.75em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover, button:focus {
+    background-color: #003f6f;
+}
+
+fieldset {
+    margin-bottom: 1.5em;
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+legend {
+    font-weight: bold;
+    color: #005b99;
+}
+</style>
+<body>
+    <header>
+        <h1>Exam Registration</h1>
+        <p>Please fill out the form below to register for the exam.</p>
+    </header>
+    <main>
+        <form action="#" method="POST" aria-labelledby="exam-registration">
+            <fieldset>
+                <legend id="exam-registration">Personal Information</legend>
+
+                <!-- Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true" placeholder="Enter your full name">
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email">
+                <br><br>
+
+                <!-- Phone Number -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required aria-required="true" placeholder="Enter your phone number">
+                <br><br>
+
+                <!-- Date of Birth -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required aria-required="true">
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Exam Details</legend>
+
+                <!-- Exam Center -->
+                <label for="center">Preferred Exam Center:</label>
+                <select id="center" name="center" required aria-required="true">
+                    <option value="">Select a center</option>
+                    <option value="center1">Center 1 - City A</option>
+                    <option value="center2">Center 2 - City B</option>
+                    <option value="center3">Center 3 - City C</option>
+                </select>
+                <br><br>
+
+                <!-- Exam Date -->
+                <label for="exam-date">Preferred Exam Date:</label>
+                <input type="date" id="exam-date" name="exam-date" required aria-required="true">
+                <br><br>
+
+                <!-- Exam Type -->
+                <fieldset>
+                    <legend>Exam Type:</legend>
+                    <input type="radio" id="online" name="exam-type" value="online" required>
+                    <label for="online">Online</label>
+                    <br>
+                    <input type="radio" id="offline" name="exam-type" value="offline">
+                    <label for="offline">Offline</label>
+                </fieldset>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Special Requirements</legend>
+
+                <!-- Special Needs -->
+                <label for="special-needs">Do you have any special needs?</label>
+                <textarea id="special-needs" name="special-needs" rows="4" placeholder="Describe any special needs or accommodations"></textarea>
+                <br><br>
+            </fieldset>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Exam Board. All rights reserved.</p>
+    </footer>
+</body>
+</html>
