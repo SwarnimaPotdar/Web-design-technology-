@@ -1,0 +1,88 @@
+// Variables
+$primary-color: lightgrey;
+$secondary-color: #71acf8;
+$background-color: #f7e7fe;
+$text-color: #2c3e50;
+$font-family: 'Arial, sans-serif';
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// Base Styles
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Layout Styles
+.header {
+  background-color: $primary-color;
+  padding: 20px 0;
+  text-align: center;
+
+  h1 {
+    color: #fff;
+    margin: 0;
+  }
+
+  p {
+    color: $secondary-color;
+  }
+}
+
+.footer {
+  background-color: $primary-color;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+// Components
+.products {
+  .product-grid {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .product {
+      background-color: #fff;
+      border: 1px solid $primary-color;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      width: calc(33.333% - 20px);
+      padding: 15px;
+
+      h3 {
+        margin: 10px 0;
+      }
+
+      p {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
