@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover timeless elegance with our accessible jewelry collection. Perfect for all occasions, crafted with care.">
+    <title>Accessible Jewelry Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style> 
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #8a5a44;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #f5d6ba;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: #8a5a44;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:focus, nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: #8a5a44;
+    margin-bottom: 0.5em;
+}
+
+.jewelry-item {
+    border: 1px solid #ddd;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.jewelry-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.jewelry-item button {
+    background-color: #8a5a44;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.jewelry-item button:focus, .jewelry-item button:hover {
+    background-color: #6f4632;
+}
+
+/* Footer */
+footer {
+    background-color: #8a5a44;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer a {
+    color: #f5d6ba;
+    text-decoration: none;
+}
+
+footer a:focus, footer a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Timeless Jewelry Collection</h1>
+        <p>Your perfect piece for every occasion.</p>
+    </header>
+    <nav>
+        <a href="#necklaces" aria-label="Go to Necklaces section">Necklaces</a>
+        <a href="#earrings" aria-label="Go to Earrings section">Earrings</a>
+        <a href="#rings" aria-label="Go to Rings section">Rings</a>
+    </nav>
+    <main>
+        <section id="necklaces">
+            <h2>Necklaces</h2>
+            <div class="jewelry-item">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/necklace-chain/s/6/i/1-g5-necklace-cloneo-original-imaghjvahwkqhzkd.jpeg?q=90&crop=false" alt="Gold necklace with diamond pendant">
+                <p>Gold necklace with a sparkling diamond pendant. $500</p>
+                <button aria-label="Add Gold necklace to cart">$500 - Add to Cart</button>
+            </div>
+        </section>
+        <section id="earrings">
+            <h2>Earrings</h2>
+            <div class="jewelry-item">
+                <img src="https://i.etsystatic.com/6955363/r/il/e4b463/2334588022/il_570xN.2334588022_hfvh.jpg" alt="Silver hoop earrings with intricate design">
+                <p>Silver hoop earrings with an intricate design. $120</p>
+                <button aria-label="Add Silver hoop earrings to cart">$120 - Add to Cart</button>
+            </div>
+        </section>
+        <section id="rings">
+            <h2>Rings</h2>
+            <div class="jewelry-item">
+                <img src="https://b2318134.smushcdn.com/2318134/wp-content/uploads/2023/05/vintage-platinum-ring-with-filigree-diamonds-and-elongated-emerald.jpg?lossy=2&strip=1&webp=1" alt="Platinum ring with emerald stone">
+                <p>Platinum ring with a stunning emerald stone. $750</p>
+                <button aria-label="Add Platinum emerald ring to cart">$750 - Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Timeless Jewelry. All rights reserved.</p>
+        <a href="#top" aria-label="Go to top of page">Back to Top</a>
+    </footer>
+</body>
+</html>
